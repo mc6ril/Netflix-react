@@ -24,6 +24,7 @@ header {
     position: fixed;
     top: 0;
     background-color: black;
+    opacity: 0.7;
 }
 header .left-header {
     display: flex;
@@ -39,10 +40,50 @@ header a {
     text-decoration: none;
     color: white;
 }
+/* background-image */
+.background-image {
+    margin-top: 60px;
+    position: relative;
+}
+.background-image img {
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+}
+.background-image .info {
+    position: absolute;
+    top: 60%;
+    left: 0;
+    width: 100%;
+    height: 40%;
+}
+.background-image .info h1 {
+    font-size: 8em;
+}
+.background-image .info span {
+    font-size: 4em;
+}
+.background-image .info button {
+    height: 60px;
+    min-width: 160px;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+.background-image .info button:first-child {
+    background-color: white;
+    color: black;
+    font-size: 2em;
+}
+.background-image .info button:last-child {
+    background-color: #363739;
+    opacity: 0.8;
+    color: white;
+    font-size: 2em;
+}
 
 /* Section */
 section {
-    margin-top: 100px;
+    margin-top: 30px;
     overflow: hidden;
 }
 
@@ -73,9 +114,59 @@ section {
     object-fit: contain;
     margin-top: 20px;
 }
+/* Footer */
+footer {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: #808080;
+}
 
+footer a {
+    text-decoration: none;
+    color: #e50a14;
+}
 @media (max-width: 1000px) {
+    .App {
+        width: 100vw;
+        margin: 0 auto;
+    }
     header a {
         display: none;
+    }
+    .background-image .info {
+        position: absolute;
+        top: 70%;
+        left: 0;
+        height: 30%;
+    }
+    .background-image .info h1 {
+        font-size: 3em;
+    }
+    .background-image .info span {
+        font-size: 1em;
+    }
+    .background-image .info button {
+        height: 60px;
+        min-width: 80px;
+        border-radius: 10px;
+        margin-right: 15px;
+    }
+    .background-image .info button:first-child {
+        background-color: white;
+        color: black;
+        font-size: 1em;
+    }
+    .background-image .info button:last-child {
+        background-color: #363739;
+        opacity: 0.8;
+        color: white;
+        font-size: 1em;
+    }
+    footer {
+        font-size: 1em;
     }
 }
