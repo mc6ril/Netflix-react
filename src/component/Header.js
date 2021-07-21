@@ -1,11 +1,11 @@
 import Link from './Link';
-import Title from './Title';
+import Logo from './Logo';
 
 const Header = (props) => {
     return (
         <header>
             <div className="left-header">
-                <Title title="Netflix" />
+                <Logo />
                 <Link href="#" name="Home" />
                 <Link href="#" name="TV Shows" />
                 <Link href="#" name="Movies" />
