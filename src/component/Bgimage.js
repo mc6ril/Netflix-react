@@ -1,5 +1,6 @@
 import bgimage from '../img/storm.jpeg';
 import Title from './Title';
+
 const Bgimage = (props) => {
     return (
         <div className="background-image">

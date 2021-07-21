@@ -36,10 +36,16 @@ header .left-header {
 header img {
     width: 30%;
 }
+header img:hover {
+    transform: scale(1.1);
+}
 
 header a {
     text-decoration: none;
     color: white;
+}
+header a:hover {
+    transform: scale(1.1);
 }
 /* background-image */
 .background-image {
